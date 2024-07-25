@@ -1,0 +1,76 @@
+.todo-app {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.task-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.task-input input,
+.task-input textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    resize: none; /* Prevent resizing for better layout control */
+}
+
+.task-input textarea {
+    height: 100px; /* Adjust height as needed */
+}
+
+.task-input button {
+    padding: 5px 10px;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+}
+
+.todo-item.completed h3,
+.todo-item.completed p {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.todo-item h3 {
+    margin: 0;
+}
+
+.todo-item p {
+    margin: 5px 0;
+}
+
+.todo-item textarea {
+    width: 100%;
+    height: 60px; /* Adjust height as needed */
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.todo-item .actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.todo-item .actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+}
