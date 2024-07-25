@@ -43,8 +43,8 @@
     background-color: #f9f9f9;
 }
 
-.todo-item.completed h3,
-.todo-item.completed p {
+.completed h3,
+.completed p {
     text-decoration: line-through;
     color: #888;
 }

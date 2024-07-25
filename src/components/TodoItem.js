@@ -12,15 +12,15 @@ const TodoItem = ({ task, updateTask, deleteTask, toggleComplete }) => {
     };
 
     return (
-        <div className="todo-item">
-            <h3 className={task.completed ? 'completed' : ''}>{task.heading}</h3>
+        <div className={`todo-item ${task.completed ? 'completed' : ''}`}>
+            <h3>{task.heading}</h3>
             {isEditing ? (
                 <textarea
                     value={updatedDescription}
                     onChange={(e) => setUpdatedDescription(e.target.value)}
                 />
             ) : (
-                <p className={task.completed ? 'completed' : ''}>{task.description}</p>
+                <p>{task.description}</p>
             )}
             <div className="actions">
                 {!task.completed && (
